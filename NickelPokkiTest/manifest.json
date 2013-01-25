@@ -1,0 +1,21 @@
+{
+  "name": "Nickel Test Pokki",
+  "version": "1.0 alpha",
+  "icons": { "19": "icon-19x19.png", 
+             "29": "icon-29x29.png",
+             "42": "icon-42x42.png",
+            "256": "icon-256x256.png" },
+  "description": "Playground Pokki for Nickel Framework.",
+  "window": "window.html",
+  "background": "background.html",
+  "notifications" : [
+    {
+      "name" : "badges",
+      "default" : "show"
+    },
+    {
+      "name" : "alerts",
+      "default" : "show"
+    }
+  ]
+}

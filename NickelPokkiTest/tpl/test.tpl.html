@@ -1,0 +1,29 @@
+<div id="test">
+	<div class="type">{{type}}</div>
+	<div class="name">{{user.name}}</div>
+	<div class="nickname">{{user.nickname}}</div>
+
+	{% if !user.following %}
+		<div class="following">NOT Following!</div>
+	{% else if user.following == 'foo' %}
+		<div class="following">Foo!</div>
+	{% else %}
+		<div class="follow">followiiing</div>
+	{% endif %}
+
+	{% if user.retweet == 'rt' && user.favorite == 'fav' %}
+		<div class="rtfav">Retweet Favorite!</div>
+	{% endif %}
+
+	{% if user.date == 01 || user.date == 02 %}
+		<div class="date">Date!</div>
+	{% endif %}
+
+	{% if !a || (a && a == 1) %}
+		<div class="date">A1...</div>
+	{% endif %}
+
+	{% for var i = 0; i < user.users.length; i++ %}
+		<div class="user">{{user.users[i]}}</div>
+	{% endfor %}
+</div>
